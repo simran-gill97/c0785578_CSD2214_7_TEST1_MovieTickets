@@ -16,6 +16,16 @@
     }
     document.getElementById('costHeading').innerHTML = "Total Amount to Pay : $"+data.cost;
 }
+
+function buttonClicked(){
+    var cardHolderName = document.getElementById("cardHolderName").value;
+    var cardNumber = document.getElementById("cardNumber").value;
+    var cvv = document.getElementById("cvv").value;
+    console.log(cvv);
+    if (cardHolderName.length == 0 || cardNumber.length == 0 || cvv.length == 0){
+        alert("fields cannot be empty!!")
+    }
+}
 </script>
 </head>
 <body>

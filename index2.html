@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Selection </title>
+    <link rel="stylesheet" href="./ticketSelection.css">
+</head>
+
+<body>
+    <label>PICK A MOVIE</label>
+    <select id="cars" name="cars">
+        <option value="13">Titanic($13.00)
+        </option>
+        <option value="15">Pirates of Carribean($15.00)
+        </option>
+        <option value="10"> Eat Pray Love($10.00)
+        </option>
+    </select>
+    <div class="allSeats">
+        <tr>
+            <td><input type="checkbox"  class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox"  class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input  type="checkbox" class="seats">
+            </td>
+            <td><input  type="checkbox" class="seats">
+            </td>
+
+        </tr>
+        <br>
+        <tr>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+
+        </tr>
+        <br>
+        <tr>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox"  class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+
+        </tr>
+        <br>
+        <tr>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox"  class="seats">
+            </td>
+            <td><input type="checkbox"class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input  type="checkbox" class="seats">
+            </td>
+
+        </tr>
+        <br>
+        <tr>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox"class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox"class="seats">
+            </td>
+            <td><input type="checkbox"class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><inpu type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+
+        </tr>
+        <br>
+        <tr>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+            <td><input type="checkbox" class="seats">
+            </td>
+
+        </tr>
+    </div>
+    <div style="display: flex; margin-top: 3rem; text-align: center; margin-left: 40rem;">
+        <div
+            class="seatTeller NA">
+            <input
+                type="checkbox"
+                disabled> <br>
+
+            N/A
+        </div>
+        <div
+            class="seatTeller selected" style="margin-left: 1rem;">
+            <input
+                type="checkbox"
+                disabled > <br>
+
+            Selected
+        </div>
+        <br />
+        <div
+            class="seatTeller occupied" style="margin-left: 1rem;">
+            <input
+                type="checkbox"
+                disabled> <br>
+
+            Occupied
+        </div><br />
+    </div>
+    <div class="selectionInfo">
+        <h3>Movie Selected</h3>
+        <h4 id="ticketPrice">Ticket Price :  $ 0.00</h4>
+        <h4 id="numberOfSeats">Number of seats selected : $ 0.00</h4>
+        <h4 id="totalPrice">Total Price : $ 0.00</h4>
+    </div>
+    <button style="background-color: blue; color: white;" id="button">Buy Seats</button>
+    <script
+        src="./ticketSelection.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,7 @@
+
+
+
+
 function movieIsSelected() {
     var selectedMovie = document.getElementById("movieSelector").value;
     document.getElementById("movieSelect").innerHTML = "Movie Selected : " + selectedMovie;

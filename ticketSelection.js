@@ -33,5 +33,12 @@ function seatIsSelected(){
     } else {
         cost = 0.00
     }
-    document.getElementById("totalPrice").innerHTML = "Total Price : $ "+(seatsSeltc*cost);
+    cost = seatsSeltc * cost;
+    document.getElementById("totalPrice").innerHTML = "Total Price : $ " + cost;
+}
+document.getElementById("button").onclick = function () {
+    url = 'paymentDetails.html?cost=' + encodeURIComponent(cost);
+
+    document.location.href = url;
+
 }

@@ -1,3 +1,4 @@
+
 function movieIsSelected() {
     var selectedMovie = document.getElementById("movieSelector").value;
     document.getElementById("movieSelect").innerHTML = "Movie Selected : " + selectedMovie;
@@ -11,9 +12,18 @@ function movieIsSelected() {
         document.getElementById("ticketPrice").innerHTML = "Ticket Price :  $ 0.00"
     }
 }
-var seatsSeltc = 0;
+
+
 function seatIsSelected(){
-    seatsSeltc++;
+    var seats = document.getElementsByClassName("seats");
+    // console.log(seats);
+    var seatsSeltc = 0;
+   for(let i = 0;i < seats.length;i++){
+       if(seats[i].checked){
+           seatsSeltc++;
+       }
+   }
+    console.log(seatsSeltc);
     console.log("hio "+seatsSeltc)
     document.getElementById("numberOfSeats").innerHTML = "Number of seats selected : " + seatsSeltc;
     var cost = 0;

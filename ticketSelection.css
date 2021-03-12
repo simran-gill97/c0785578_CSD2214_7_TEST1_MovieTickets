@@ -3,7 +3,8 @@
     text-align: center;
 }
 body{
-    background-image:url("image.jpg");
+    /*background-image:url("image.jpg");*/
+    background-color: rgba(243, 107, 130, 0.959);
 }
 .seats{
     margin: 1rem;

@@ -37,6 +37,16 @@ function seatIsSelected(){
     document.getElementById("totalPrice").innerHTML = "Total Price : $ " + cost;
 }
 document.getElementById("button").onclick = function () {
+    // var seats = document.getElementsByClassName("seats");
+    // for (let i = 0; i < seats.length; i++) {
+    //     if (seats[i].checked) {
+    //         console.log(seats[i])
+    //         seats[i].style.background = "red";
+    //     }
+    // }
+    var al = alert("your total payment is : $ " + cost + " press OK to continue")
+
+
     url = 'paymentDetails.html?cost=' + encodeURIComponent(cost);
 
     document.location.href = url;

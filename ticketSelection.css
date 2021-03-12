@@ -27,3 +27,15 @@ input[type=checkbox]:checked:before {
     background-color: #ccc;
     margin-left: 1rem;
 }
+.selected input[type=checkbox]:before{
+    background: green;
+      
+    content: "";
+    display: inline-block;
+}
+.occupied input[type=checkbox]:before{
+    background: red;
+      
+    content: "";
+    display: inline-block;
+}

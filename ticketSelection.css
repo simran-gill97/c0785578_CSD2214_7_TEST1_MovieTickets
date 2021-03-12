@@ -1,0 +1,21 @@
+
+*{
+    text-align: center;
+}
+.seats{
+    margin: 1rem;
+}
+input[type=checkbox]:before{
+    width: 2rem;
+    height: 2rem;
+    
+    content: "";
+    display: inline-block;
+    background-color:#ccc;
+}
+
+
+input[type=checkbox]:checked:before {
+    background-color:Green;
+    font-size: 15px;
+}
